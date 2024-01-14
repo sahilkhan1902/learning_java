@@ -49,10 +49,25 @@ import java.util.*;
         System.out.println("Relational operation using Great than equal to = " + (num1 <= num2));
 
           /*Logical Operator
-  && (Logical And)
-  || (Logical OR)
-  !  ((Logical Not))
+  && (Logical And) both cases should be true
+  || (Logical OR) either one case should be true
+  !  ((Logical Not)) if false it will turn true and vice versa
       */
+      System.out.println("Logical operation using && = " + ((3>2) && (5>0))); // both case should be true so, in this case  it will return true
+      System.out.println("Logical operation using && = " + ((3<2) && (5>0))); // both case should be true so it will return false
+      System.out.println("Logical operation using || = " + ((3<2) || (5>0)));
+      System.out.println("Logical operation using ! = " + (!(3<2) )); // this statement is false so it will return true and vice versa
+
+      /* Assignment Operations 
+      (+=, -=, *=, /=, %=)*/
+      int a = 5;
+int b = 3;
+
+System.out.println("a after += b: " + (a += b)); // Compound Assignment with Addition (+=)
+System.out.println("a after -= b: " + (a -= b)); // Compound Assignment with Subtraction (-=)
+System.out.println("a after *= b: " + (a *= b)); // Compound Assignment with Multiplication (*=)
+System.out.println("a after /= b: " + (a /= b)); // Compound Assignment with Division (/=)
+System.out.println("a after %= b: " + (a %= b)); // Compound Assignment with Modulus (%=)
      }
 
  }
