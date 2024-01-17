@@ -86,11 +86,11 @@ public class index{
       System.out.println("choose operator is = " + operate);
 
       switch(operate){
-        case '+' : System.out.println("the sum of num1 and num2 = "+ (num1 + num2));
+        case '+' : System.out.println("the addition by adding num1 and num2 = "+ (num1 + num2));
         break;
-        case '-' : System.out.println("the sub of num1 and num2 = "+ (num1 - num2));
+        case '-' : System.out.println("the subtraction by minusing num1 and num2 = "+ (num1 - num2));
         break;
-        case '*' : System.out.println("the multiple of num1 and num2 = "+ (num1 * num2));
+        case '*' : System.out.println("the multiple by multiplying num1 and num2 = "+ (num1 * num2));
         break;
         case '/' : System.out.println("the division of num1 and num2 = "+ (num1 / num2));
         break;
