@@ -49,11 +49,14 @@ public class index{
 
 
 int n =sc.nextInt();
+int rev=0;
 while(n>0){
-    int reversedigit =n%10;
-    System.out.print(reversedigit);
+    int lastdigit =n%10;
+    rev=(rev*10)  + lastdigit;
+    System.out.print(lastdigit);
     n/=10;
 }
-System.out.println();
+System.out.println("rev");
+// System.out.println(rev);
     }
 };
