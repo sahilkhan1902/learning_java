@@ -57,10 +57,34 @@ public class index{
 //     n/=10;
 // }
 // System.out.println("rev");
-int n=1;
-do{
-    System.out.println("hello world");
+// int n=1;
+// do{
+//     System.out.println("hello world");
+//     n++;
+// }while(n<=10);
+
+int n =1;
+while (n<=6){
+    if(n == 3){
+        break;
+    }
+    System.out.println(n);
     n++;
-}while(n<=10);
+}
+System.out.println("i am out of the loop");
+
+
+
+while(true){
+    System.out.print("Enter a number: ");
+    int a = sc.nextInt();    if(a%10 == 0){
+        System.out.println("Your enter no is divible by 10 and enter value is " + a);
+        break;
+    }
+    else{
+        System.out.println("Your enter no is not divible by 10, try again");
+
+    }
+}
     }
 };
