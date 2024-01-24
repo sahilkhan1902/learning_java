@@ -74,7 +74,7 @@ while (n<=6){
 System.out.println("i am out of the loop");
 
 
-
+// take input from users if no is divisble by 10 then exit else keep running the loop
 while(true){
     System.out.print("Enter a number: ");
     int a = sc.nextInt();    if(a%10 == 0){
@@ -86,5 +86,28 @@ while(true){
 
     }
 }
+
+// loop using continue
+for(int i=1; i<=5; i++){
+    if( i ==3 ){
+        continue;
+    }
+    System.out.println(i);
+}
+ 
+
+// take input from the user and print if no is not divible by 10
+while(true){
+    System.out.print("Enter a number: ");
+    int num = sc.nextInt();    if(num%10 == 0){
+      
+        continue;
+    }
+    else{
+        System.out.println(num);
+
+    }
+}
+
     }
 };
