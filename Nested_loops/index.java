@@ -11,17 +11,20 @@ public class index {
         //     System.out.println();
         // }
 
-        // hollow star pattern code
-        for(int line =1; line<=4; line++){
-            for(int i=1; i<=5; i++ ){
-                if(i == 2 && i ==3){
-                    System.out.print("*   *");
+        // hollow star pattern code .
+        int n =4;
+        int m =5;
+        for(int i =1; i<=n; i++){
+            for(int j=1; j<=m; j++ ){
+                if(i == 1 || j ==1 || i ==n || j ==m){
+                    System.out.print("*");
                 } else {
 
-                    System.out.print("*");
+                    System.out.print(" ");
                 }
             }
             System.out.println();
+            
         }
 
 
