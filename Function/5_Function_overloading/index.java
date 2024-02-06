@@ -8,7 +8,7 @@ public class index {
     public static int sum(int a, int b){
         return a+b;
     }
-    public static int sum(int a, int b, int c){
+    public static int sum(int a, int b, int c){ // here three params used with same sum name function
         return a+b+c ;
     }
     public static void main(String[] args) {
