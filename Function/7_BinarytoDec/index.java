@@ -10,7 +10,7 @@ public class index {
             pow++;
            binom= binom/10;
         }
-        System.out.print("The Binary to decimal of " + myNum + " = " + dec);
+        System.out.print("The Binary to decimal of " + myNum + " = " + dec); // here it will print
       
 
     }
