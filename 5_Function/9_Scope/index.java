@@ -12,6 +12,6 @@ public class index {
         System.out.println(p);
         System.out.println(s);
     }  
-   // System.out.println(s); // her it will throw error as s is block scope variable
+   // System.out.println(s); // her it will throw error as s is block scope variable it can't access outside the scope
     }
 }
