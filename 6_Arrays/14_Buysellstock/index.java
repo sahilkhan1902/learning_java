@@ -6,8 +6,8 @@ public class index {
         int maxProfit = 0;
 
         for (int i = 0; i < prices.length; i++) {
-            if(buyPrices < prices[i]){
-                int profit = prices[i] - buyPrices;
+            if(buyPrices < prices[i]){ //profit
+                int profit = prices[i] - buyPrices; // today profit
                  maxProfit = Math.max(maxProfit, profit);
             }else{
                 buyPrices = prices[i];
