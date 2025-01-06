@@ -48,13 +48,24 @@ public class index {
         }
          return isSorted(arr, i+1);
     }
+    public static int RetIndex(int arr[], int key, int i){
+        if (i == arr.length){
+            return -1;
+        }
+        if (arr[i] == key){
+            return i;
+        } 
+            return RetIndex(arr, key,  i+1);
+        
+    }
     public static void main (String[]args){
      int arr[] = {1,6,4,5,6};
         int n =5;
         // printInc(n);
         // printDec(n);
-        System.out.println(printFibo(n));
-        System.out.println(isSorted(arr, 0));
+        // System.out.println(printFibo(n));
+        // System.out.println(isSorted(arr, 0));
+        System.out.println(RetIndex(arr,6,0));
     }
 }
 
