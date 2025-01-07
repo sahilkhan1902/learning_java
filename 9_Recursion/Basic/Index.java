@@ -48,24 +48,43 @@ public class index {
         }
          return isSorted(arr, i+1);
     }
-    public static int RetIndex(int arr[], int key, int i){
+    public static int firstOccurence(int arr[], int key, int i){
         if (i == arr.length){
             return -1;
         }
         if (arr[i] == key){
             return i;
         } 
-            return RetIndex(arr, key,  i+1);
+            return firstOccurence(arr, key,  i+1);
         
     }
+    static int lastOccurence(int arr[], int key,int i){
+        if( i == arr.length){
+            return -1;
+        }
+        int ind = lastOccurence(arr, key, i+1);
+
+        if(ind == -1 && arr[i] == key){
+           return i;
+        }
+        return ind;
+    }
+    static int power (int x, int n){
+        if( n == 0){
+            return 1;
+        }
+        return x * power(x, n-1);
+    }
     public static void main (String[]args){
-     int arr[] = {1,6,4,5,6};
+     int arr[] = {1,6,4,5,4,6};
         int n =5;
         // printInc(n);
         // printDec(n);
         // System.out.println(printFibo(n));
         // System.out.println(isSorted(arr, 0));
-        System.out.println(RetIndex(arr,6,0));
+        // System.out.println(lastOccurence(arr,6,0));
+           System.out.println(power(5,3));
+
     }
 }
 
