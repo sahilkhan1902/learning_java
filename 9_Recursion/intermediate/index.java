@@ -9,7 +9,7 @@ public class index {
     }
     public static void main(String[] args) {
       System.out.println( tilingProblen(3));
-      System.out.println( tilingProblen(3));
+
        
     }
     
