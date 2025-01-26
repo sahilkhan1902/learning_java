@@ -10,6 +10,7 @@ public class index {
         list.add(3);
         list.add(4);
         list.add(5);
+        list.add(1,9); //O(n)
         System.out.println(list);
 
         // get operation O(1);
@@ -26,6 +27,15 @@ public class index {
           // Contains operation 
           System.out.println( list.contains(2));
           System.out.println( list.contains(11));
+
+           // size operation
+          System.out.println( list.size());
+
+
+          // print the array list
+          for (int index = 0; index <list.size(); index++) {
+            System.out.print(list.get(index)+ " ");
+          }
 
     }
 }
