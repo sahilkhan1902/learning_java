@@ -14,11 +14,12 @@ public class index { public static void main(String[] args) {
         System.out.println(list.get(index)+ " ");
         
     }
-    int max = Integer.MIN_VALUE;
+    int max = Integer.MIN_VALUE; // 0(N)
     for (int index = 0; index < list.size(); index++) {
-        if(max < list.get(index)){
-            max = list.get(index);
-        }
+        // if(max < list.get(index)){
+        //     max = list.get(index);
+        // }
+        max = Math.max(max, list.get(index));
     }
     System.out.println(max + " is the max number");
 
