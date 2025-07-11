@@ -75,6 +75,18 @@ public class index {
         }
         return x * power(x, n-1);
     }
+    static int optPower(int x, int n){
+        if( n ==0 ){
+            return 1;
+        }
+        int halfpower = optPower(x, n/2);
+        int halfPowerSq = halfpower * halfpower;
+       if ( n%2 != 0){
+        halfPowerSq = x * halfPowerSq;
+       }
+       return halfPowerSq;
+
+    }
     public static void main (String[]args){
      int arr[] = {1,6,4,5,4,6};
         int n =5;
@@ -83,7 +95,7 @@ public class index {
         // System.out.println(printFibo(n));
         // System.out.println(isSorted(arr, 0));
         // System.out.println(lastOccurence(arr,6,0));
-           System.out.println(power(5,3));
+           System.out.println(optPower(5,3));
 
     }
 }
